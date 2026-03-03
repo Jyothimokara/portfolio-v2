@@ -1,0 +1,134 @@
+/* ═══════════════════════════════════════════════════════════
+   PROJECTS SECTION STYLES
+════════════════════════════════════════════════════════════ */
+
+.projects {
+  position: relative;
+  padding: 80px 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(30, 30, 30, 0.3) 100%);
+  overflow: hidden;
+}
+
+/* Header Section */
+.projects-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.projects-title {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #a78bfa 0%, #fafafa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 15px 0;
+  letter-spacing: -1px;
+}
+
+.projects-subtitle {
+  font-size: 16px;
+  color: #a1a1aa;
+  margin: 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  width: 100%;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE DESIGN
+════════════════════════════════════════════════════════════ */
+
+/* Large Desktop - 3 columns */
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .projects {
+    padding: 70px 0;
+  }
+
+  .projects-title {
+    font-size: 42px;
+  }
+}
+
+/* Tablet - 2 columns */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .projects {
+    padding: 60px 0;
+  }
+
+  .projects-header {
+    margin-bottom: 50px;
+  }
+
+  .projects-title {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .projects-subtitle {
+    font-size: 14px;
+  }
+}
+
+/* Mobile - 1 column */
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .projects {
+    padding: 50px 0;
+  }
+
+  .projects-header {
+    margin-bottom: 40px;
+  }
+
+  .projects-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .projects-subtitle {
+    font-size: 13px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .projects {
+    padding: 40px 0;
+  }
+
+  .projects-grid {
+    gap: 16px;
+  }
+
+  .projects-title {
+    font-size: 24px;
+  }
+
+  .projects-header {
+    margin-bottom: 35px;
+  }
+}

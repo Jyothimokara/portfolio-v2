@@ -1,0 +1,104 @@
+/* ============================================================
+   GLOBAL CSS — fixes layout issues for local file + live server
+   ============================================================ */
+
+/* 1. Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Remove default body margin/padding — prevents left empty space */
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* 3. Root div full width (React mounts here) */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* 4. Images always scale to their container */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5. Full-width layout containers — no accidental max-width limits */
+.layout-wrapper,
+.section-wrapper,
+.container,
+.content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 6. Responsive container with sensible max-width (remove if you want true edge-to-edge) */
+.container--responsive {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 3rem);
+}
+
+/* 7. Section full-width base */
+section {
+  width: 100%;
+  position: relative;
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container--responsive {
+    padding: 0 1rem;
+  }
+}
+
+/* Tablet (481px – 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container--responsive {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Desktop (769px – 1280px) */
+@media (min-width: 769px) and (max-width: 1280px) {
+  .container--responsive {
+    padding: 0 2rem;
+  }
+}
+
+/* Wide Desktop (> 1280px) */
+@media (min-width: 1281px) {
+  .container--responsive {
+    padding: 0 3rem;
+  }
+}
