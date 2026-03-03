@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./navbar.css";
+import "./Navbar.css";
 
 export default function Navbar() {
   const sections = ["hero", "about", "skills", "projects", "contact"];
