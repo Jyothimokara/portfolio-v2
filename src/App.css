@@ -283,21 +283,212 @@ align-items:center;
 100%{transform:translateX(-50%)}
 }
 
-/* ================= TABLET ================= */
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact{
+text-align:left;
+}
+
+/* MAIN LAYOUT */
+
+.contact-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:flex-start;
+}
+
+/* LEFT SIDE */
+
+.contact-info{
+display:flex;
+flex-direction:column;
+gap:24px;
+}
+
+.contact-intro{
+font-size:1rem;
+color:#a1a1aa;
+line-height:1.8;
+max-width:420px;
+}
+
+.contact-details{
+display:flex;
+flex-direction:column;
+gap:22px;
+}
+
+.contact-item{
+display:flex;
+align-items:flex-start;
+gap:14px;
+}
+
+.contact-item svg{
+flex-shrink:0;
+margin-top:2px;
+}
+
+.contact-label{
+font-size:0.8rem;
+color:#71717a;
+display:block;
+margin-bottom:4px;
+}
+
+.contact-value{
+color:#e4e4e7;
+text-decoration:none;
+font-size:0.95rem;
+}
+
+.contact-value:hover{
+color:#a78bfa;
+}
+
+/* RIGHT SIDE FORM CARD */
+
+.contact-form-card{
+width:100%;
+max-width:520px;
+
+background:rgba(255,255,255,0.03);
+border:1px solid rgba(139,92,246,0.2);
+border-radius:12px;
+
+padding:32px;
+
+backdrop-filter:blur(10px);
+
+margin-left:auto;
+
+transition:all 0.3s ease;
+}
+
+.contact-form-card:hover{
+border-color:#8b5cf6;
+transform:translateY(-2px);
+}
+
+/* FORM */
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+/* INPUT GROUP */
+
+.form-group{
+display:flex;
+flex-direction:column;
+gap:6px;
+}
+
+.form-group label{
+font-size:0.9rem;
+color:#e4e4e7;
+}
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+
+padding:12px 14px;
+
+border-radius:8px;
+
+border:1px solid rgba(139,92,246,0.2);
+
+background:rgba(255,255,255,0.02);
+
+color:#e4e4e7;
+
+font-size:0.9rem;
+
+transition:0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+outline:none;
+
+border-color:#8b5cf6;
+
+background:rgba(255,255,255,0.04);
+
+}
+
+/* TEXTAREA */
+
+.contact-form textarea{
+min-height:130px;
+resize:none;
+}
+
+/* BUTTON */
+
+.contact-form button{
+width:100%;
+margin-top:10px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
 
 @media(max-width:1024px){
 
-.hero-grid{
+.contact-content{
+gap:50px;
+}
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+.contact-content{
 grid-template-columns:1fr;
-text-align:center;
+gap:40px;
 }
 
-.projects-grid{
-grid-template-columns:repeat(2,1fr);
+.contact-intro{
+max-width:100%;
 }
 
-.skills-grid{
-grid-template-columns:repeat(2,1fr);
+.contact-form-card{
+max-width:100%;
+margin:auto;
+padding:28px;
+}
+
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media(max-width:480px){
+
+.contact-form-card{
+padding:24px;
+}
+
+.contact-form input,
+.contact-form textarea{
+font-size:0.85rem;
 }
 
 }
