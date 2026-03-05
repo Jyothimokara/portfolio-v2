@@ -711,7 +711,6 @@ section:last-child {
   }
 }
 /* ================= SKILLS MARQUEE HORIZONTAL FIX ================= */
-
 .skills-marquee-container {
   width: 100%;
   overflow: hidden;
@@ -754,7 +753,7 @@ section:last-child {
   transform: scale(1.2);
 }
 
-/* CONTINUOUS LEFT SCROLL */
+/* CONTINUOUS SCROLL */
 @keyframes marqueeScroll {
   0% {
     transform: translateX(0);
@@ -764,16 +763,22 @@ section:last-child {
   }
 }
 
-
-/* Mobile adjustments */
+/* 📱 MOBILE FIX */
 @media (max-width: 768px) {
-  .hero-image img {
-    filter: grayscale(100%) contrast(1.05) brightness(0.96);
+
+  .skills-marquee {
+    gap: 40px;
+    animation-duration: 22s;
   }
 
-  .hero-image::after {
-    opacity: 0;
+  .marquee-item {
+    min-width: 90px;
   }
+
+  .marquee-item span {
+    font-size: 0.8rem;
+  }
+
 }
 /* CONTACT LAYOUT */
 
