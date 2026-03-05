@@ -3,35 +3,34 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- ✅ Viewport: essential for responsive layout on all devices -->
+    <!-- Responsive layout -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ✅ Prevents IE compatibility mode which breaks layouts -->
+    <!-- Prevent IE compatibility mode -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- SEO / Social -->
-    <meta name="description" content="Portfolio" />
+    <!-- SEO -->
+    <meta name="description" content="Portfolio Website" />
     <meta name="theme-color" content="#020617" />
 
     <title>Portfolio</title>
 
-    <!-- ✅ Favicon — use relative path so it works locally -->
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <!-- ✅ Fonts — loaded from CDN, works everywhere -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600&display=swap" 
       rel="stylesheet"
     />
   </head>
 
   <body>
-    <!-- ✅ No inline margin/style here — handled by CSS -->
     <div id="root"></div>
 
-    <!-- ✅ Vite will inject the correct relative script path when you run build -->
-    <script type="module" src="./src/main.jsx"></script>
+    <!-- Vite Entry -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

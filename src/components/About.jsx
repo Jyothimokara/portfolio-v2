@@ -31,12 +31,17 @@ export default function About() {
           {/* RIGHT SIDE CARD */}
           <div className="about-highlight">
             <h3>What I Do</h3>
-            <ul style={{ listStyle: "none" }}>
-              <li>✨ Responsive across all devices</li>
-              <li>⚡ Fast and high-performance</li>
-              <li>♿ Accessible and user-friendly</li>
-              <li>🎨 Clean, modern UI</li>
-            </ul>
+             <ul className="what-list">
+    <li>✨ Responsive across all devices</li>
+    <li>⚡ Fast and high-performance websites</li>
+    <li>♿ Accessible and user-friendly UI</li>
+    <li>🎨 Clean, modern UI design</li>
+    <li>🧩 Reusable React components</li>
+    <li>📱 Mobile-first development</li>
+    <li>🚀 Performance optimization</li>
+    <li>🔧 Debugging and code optimization</li>
+    <li>🤖 AI-assisted frontend workflows</li>
+  </ul>
           </div>
         </div>
       </div>

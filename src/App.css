@@ -177,6 +177,8 @@ section:last-child {
 /* ═══════════════════════════════════════════════════════════
    ABOUT SECTION
 ════════════════════════════════════════════════════════════ */
+/* SECTION TITLE */
+
 .about h2,
 .skills h2,
 .projects h2,
@@ -187,12 +189,18 @@ section:last-child {
   color: #fafafa;
 }
 
+
+/* ABOUT GRID */
+
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: start;
 }
+
+
+/* LEFT TEXT */
 
 .about-text {
   font-size: 1rem;
@@ -204,9 +212,13 @@ section:last-child {
   margin-bottom: 20px;
 }
 
+
+/* LEFT LIST */
+
 .about-list {
   list-style: none;
   margin-top: 30px;
+  padding: 0;
 }
 
 .about-list li {
@@ -215,22 +227,58 @@ section:last-child {
   display: flex;
   align-items: center;
   gap: 12px;
+  font-size: 0.95rem;
 }
 
-.about-list li:before {
+.about-list li::before {
   content: "→";
   color: #8b5cf6;
   font-weight: bold;
   min-width: 20px;
 }
 
+
+/* RIGHT CARD (WHAT I DO) */
+
 .about-highlight {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 130, 246, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.1),
+    rgba(59, 130, 246, 0.1)
+  );
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 10px;
   border-left: 4px solid #8b5cf6;
 }
 
+
+/* CARD TITLE */
+
+.about-highlight h3 {
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+  color: #fafafa;
+}
+
+
+/* WHAT I DO LIST */
+
+.what-list {
+  list-style: none;   /* bullets remove */
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  gap: 10px;
+}
+
+.what-list li {
+  color: #a1a1aa;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 /* ═══════════════════════════════════════════════════════════
    SKILLS SECTION
 ════════════════════════════════════════════════════════════ */
