@@ -839,8 +839,27 @@ section:last-child {
 }
 
 /* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-} 
+@media (max-width:768px){
+
+.portfolio-container{
+padding:20px;
+}
+
+.skills-grid{
+grid-template-columns:1fr;
+}
+
+.about-content{
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.projects-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+}
