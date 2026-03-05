@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { VscVscode } from "react-icons/vsc";
+import { FaCss3Alt } from "react-icons/fa";
+
 import {
   SiGit,
   SiGithub,
   SiReact,
   SiJavascript,
   SiHtml5,
-  SiCss3,
   SiTailwindcss,
   SiBootstrap,
   SiFramer,
