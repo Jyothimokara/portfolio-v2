@@ -31,7 +31,10 @@ export default function Skills() {
     { name: "React", icon: <SiReact size={32} color="#61DAFB" /> },
     { name: "JavaScript", icon: <SiJavascript size={32} color="#F7DF1E" /> },
     { name: "HTML5", icon: <SiHtml5 size={32} color="#E34F26" /> },
-    { name: "CSS3", icon: <SiCss3 size={32} color="#1572B6" /> },
+
+    // ✅ FIXED HERE
+    { name: "CSS3", icon: <FaCss3Alt size={32} color="#1572B6" /> },
+
     { name: "Tailwind", icon: <SiTailwindcss size={32} color="#06B6D4" /> },
     { name: "Bootstrap", icon: <SiBootstrap size={32} color="#7952B3" /> },
     { name: "Framer Motion", icon: <SiFramer size={32} color="#0055FF" /> },
@@ -52,7 +55,7 @@ export default function Skills() {
       <div className="portfolio-container">
         <h2>Skills & Expertise</h2>
 
-        {/* ✅ SKILL CARDS */}
+        {/* SKILL CARDS */}
         <div className="skills-grid">
           <div className="skill-card">
             <h3>Frontend Skills</h3>
@@ -98,7 +101,7 @@ export default function Skills() {
           </div>
         </div>
 
-        {/* ✅ MARQUEE */}
+        {/* MARQUEE */}
         <div
           className="skills-marquee-container"
           onMouseEnter={() => setIsHovered(true)}
