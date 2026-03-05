@@ -718,19 +718,21 @@ section:last-child {
   margin-top: 60px;
 }
 
+/* MARQUEE TRACK */
 .skills-marquee {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 70px;
   width: max-content;
   animation: marqueeScroll 30s linear infinite;
 }
 
+/* PAUSE ON HOVER */
 .skills-marquee-container:hover .skills-marquee {
   animation-play-state: paused;
 }
 
+/* ITEM */
 .marquee-item {
   display: flex;
   flex-direction: column;
@@ -745,6 +747,7 @@ section:last-child {
   color: #a1a1aa;
 }
 
+/* ICON HOVER */
 .marquee-item svg {
   transition: transform 0.3s ease;
 }
@@ -765,6 +768,10 @@ section:last-child {
 
 /* 📱 MOBILE FIX */
 @media (max-width: 768px) {
+
+  .skills-marquee-container {
+    margin-top: 40px;
+  }
 
   .skills-marquee {
     gap: 40px;
