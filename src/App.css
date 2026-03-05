@@ -240,17 +240,22 @@ section:last-child {
 
 /* RIGHT CARD (WHAT I DO) */
 
-.about-highlight {
-  background: linear-gradient(
-    135deg,
-    rgba(139, 92, 246, 0.1),
-    rgba(59, 130, 246, 0.1)
-  );
-  padding: 30px;
-  border-radius: 10px;
-  border-left: 4px solid #8b5cf6;
-}
+.about-highlight{
+background:linear-gradient(
+135deg,
+rgba(139,92,246,0.1),
+rgba(59,130,246,0.1)
+);
 
+padding:35px 40px;
+
+border-radius:12px;
+
+border-left:4px solid #8b5cf6;
+
+max-width:520px;
+margin-left:auto;
+}
 
 /* CARD TITLE */
 
@@ -272,12 +277,18 @@ section:last-child {
   gap: 10px;
 }
 
-.what-list li {
-  color: #a1a1aa;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.what-list{
+list-style:none;
+padding:0;
+margin:0;
+
+display:grid;
+gap:12px;
+}
+.portfolio-container{
+max-width:1200px;
+margin:auto;
+padding:0 30px;
 }
 /* ═══════════════════════════════════════════════════════════
    SKILLS SECTION
