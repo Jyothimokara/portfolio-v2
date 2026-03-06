@@ -10,58 +10,64 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
 
-const lensRef = useRef(null);
+  const lensRef = useRef(null);
 
-useEffect(() => {
+  useEffect(() => {
 
-const lens = lensRef.current;
+    const lens = lensRef.current;
 
-// Lens expand animation
-gsap.to(lens, {
-  clipPath: "circle(1200px at center)",
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".projects-hero",
-    start: "top top",
-    end: "+=800",
-    scrub: true,
-  }
-});
+    gsap.fromTo(
+      lens,
+      {
+        clipPath: "circle(0px at center)"
+      },
+      {
+        clipPath: "circle(1200px at center)",
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".projects-hero",
+          start: "top top",
+          end: "+=800",
+          scrub: true,
+        }
+      }
+    );
 
-}, []);
+  }, []);
 
-return (
+  return (
 
-<section id="projects" className="projects-section">
+    <section id="projects" className="projects-section">
 
-  {/* HERO */}
-  <div className="projects-hero">
+      {/* HERO */}
+      <div className="projects-hero">
 
-    <div className="latest-circle">
-      <h2>
-        <span>LATEST</span>
-        <span>PROJECTS</span>
-      </h2>
-    </div>
+        <div className="latest-circle">
+          <h2>
+            <span>LATEST</span>
+            <span>PROJECTS</span>
+          </h2>
+        </div>
 
-    <div ref={lensRef} className="code-lens"></div>
+        {/* LENS */}
+        <div ref={lensRef} className="code-lens"></div>
 
-  </div>
+      </div>
 
-  {/* PROJECT CARDS */}
-  <div className="projects-grid">
+      {/* PROJECT CARDS */}
+      <div className="projects-grid">
 
-    {PROJECTS_DATA.map((project, index) => (
-      <ProjectCard
-        key={project.id}
-        project={project}
-        rotate={index % 2 === 0 ? "-3deg" : "3deg"}
-      />
-    ))}
+        {PROJECTS_DATA.map((project, index) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            rotate={index % 2 === 0 ? "-3deg" : "3deg"}
+          />
+        ))}
 
-  </div>
+      </div>
 
-</section>
+    </section>
 
-);
+  );
 }

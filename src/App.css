@@ -334,8 +334,41 @@ padding:0 30px;
 /* ═══════════════════════════════════════════════════════════
    PROJECTS SECTION
 ════════════════════════════════════════════════════════════ */
- 
+ /* ================= HERO ================= */
+
+.projects-hero{
+position:relative;
+overflow:hidden;
+
+min-height:70vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* ================= LENS ================= */
+
+.code-lens{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:url("/background.jpg") center/cover no-repeat;
+
+clip-path:circle(0px at center);
+
+z-index:1;
+}
+
+/* ================= CIRCLE ================= */
+
 .latest-circle{
+position:relative;
+z-index:5;
+
 width:min(70vw,600px);
 height:min(70vw,600px);
 
@@ -348,10 +381,11 @@ justify-content:center;
 
 margin:auto;
 text-align:center;
+
 padding:40px;
 }
 
-/* text layout */
+/* ================= TEXT ================= */
 
 .latest-circle h2{
 display:flex;
@@ -359,20 +393,34 @@ flex-direction:column;
 align-items:center;
 
 font-weight:700;
-line-height:1.3;
 letter-spacing:2px;
+line-height:1.3;
 
 font-size:clamp(32px,6vw,72px);
 }
 
-/* projects text */
+/* OUTLINE TEXT */
+
+.latest-circle h2 span:first-child{
+color:#fff;
+-webkit-text-stroke:2px #fff;
+-webkit-text-fill-color:transparent;
+}
+
+/* SOLID TEXT */
 
 .latest-circle h2 span:last-child{
 color:#fff;
 font-weight:800;
 }
 
- @media (max-width:768px){
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.projects-hero{
+min-height:60vh;
+}
 
 .latest-circle{
 width:80vw;
@@ -381,7 +429,7 @@ padding:30px;
 }
 
 .latest-circle h2{
-font-size:clamp(26px,7vw,40px);
+font-size:clamp(24px,7vw,38px);
 line-height:1.4;
 }
 
