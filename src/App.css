@@ -335,12 +335,14 @@ padding:0 30px;
    PROJECTS SECTION
 ════════════════════════════════════════════════════════════ */
  .latest-circle{
-width:min(70vw,600px);
-height:min(70vw,600px);
+
+width:min(65vw,550px);
+height:min(65vw,550px);
 
 border-radius:50%;
 
-background:#000;
+background:rgba(255,255,255,0.03);
+border:1px solid rgba(139,92,246,0.2);
 
 display:flex;
 align-items:center;
@@ -348,15 +350,19 @@ justify-content:center;
 
 margin:auto;
 position:relative;
+
 }
 .latest-circle h2{
+
 text-align:center;
 line-height:1.1;
 font-weight:700;
 
-font-size:clamp(30px,5vw,70px);
-}
+font-size:clamp(28px,5vw,64px);
 
+letter-spacing:1px;
+
+}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -446,6 +452,22 @@ font-size:clamp(30px,5vw,70px);
 
 .project-links a:hover {
   color: #a78bfa;
+} 
+@media (max-width:768px){
+
+.latest-circle{
+
+width:80vw;
+height:80vw;
+
+}
+
+.latest-circle h2{
+
+font-size:clamp(24px,6vw,36px);
+
+}
+
 }
 
 /* ═══════════════════════════════════════════════════════════
