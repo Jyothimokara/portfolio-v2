@@ -77,7 +77,7 @@ export default function Contact() {
                 <Phone size={20} color="#a78bfa" />
                 <div>
                   <span className="contact-label">Phone</span>
-                  <p className="contact-value">+91 82478 93335</p>
+                  <p className="contact-value">+91 12345 67890</p>
                 </div>
               </div>
 
