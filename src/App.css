@@ -334,6 +334,29 @@ padding:0 30px;
 /* ═══════════════════════════════════════════════════════════
    PROJECTS SECTION
 ════════════════════════════════════════════════════════════ */
+ .latest-circle{
+width:min(70vw,600px);
+height:min(70vw,600px);
+
+border-radius:50%;
+
+background:#000;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+margin:auto;
+position:relative;
+}
+.latest-circle h2{
+text-align:center;
+line-height:1.1;
+font-weight:700;
+
+font-size:clamp(30px,5vw,70px);
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
