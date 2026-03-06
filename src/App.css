@@ -334,8 +334,7 @@ padding:0 30px;
 /* ═══════════════════════════════════════════════════════════
    PROJECTS SECTION
 ════════════════════════════════════════════════════════════ */
- /* ================= LATEST PROJECTS CIRCLE ================= */
-
+ 
 .latest-circle{
 width:min(70vw,600px);
 height:min(70vw,600px);
@@ -352,7 +351,7 @@ text-align:center;
 padding:40px;
 }
 
-/* TEXT CONTAINER */
+/* text layout */
 
 .latest-circle h2{
 display:flex;
@@ -360,31 +359,20 @@ flex-direction:column;
 align-items:center;
 
 font-weight:700;
-line-height:1.4;
+line-height:1.3;
 letter-spacing:2px;
 
 font-size:clamp(32px,6vw,72px);
 }
 
-/* LATEST OUTLINE */
-
-.latest-circle h2 span:first-child{
-display:block;
-color:transparent;
--webkit-text-stroke:2px #fff;
-}
-
-/* PROJECTS SOLID */
+/* projects text */
 
 .latest-circle h2 span:last-child{
-display:block;
 color:#fff;
 font-weight:800;
 }
 
-/* ================= MOBILE FIX ================= */
-
-@media (max-width:768px){
+ @media (max-width:768px){
 
 .latest-circle{
 width:80vw;
@@ -394,11 +382,10 @@ padding:30px;
 
 .latest-circle h2{
 font-size:clamp(26px,7vw,40px);
-line-height:1.5;
+line-height:1.4;
 }
 
 }
-
 /* ================= PROJECTS GRID ================= */
 
 .projects-grid{

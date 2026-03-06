@@ -11,13 +11,10 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Projects() {
 
 const lensRef = useRef(null);
-const titleRef = useRef(null);
 
 useEffect(() => {
 
-
 const lens = lensRef.current;
-const title = titleRef.current;
 
 // Lens expand animation
 gsap.to(lens, {
@@ -31,34 +28,21 @@ gsap.to(lens, {
   }
 });
 
-// Title move + fade
-gsap.to(title, {
-  y: -250,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".projects-hero",
-    start: "top top",
-    end: "+=400",
-    scrub: true,
-  }
-});
-
-
 }, []);
 
 return (
-
 
 <section id="projects" className="projects-section">
 
   {/* HERO */}
   <div className="projects-hero">
-<div className="latest-circle">
-  <h2>
-  <span>LATEST</span>
-  <span>PROJECTS</span>
-</h2>
-</div>
+
+    <div className="latest-circle">
+      <h2>
+        <span>LATEST</span>
+        <span>PROJECTS</span>
+      </h2>
+    </div>
 
     <div ref={lensRef} className="code-lens"></div>
 
@@ -78,7 +62,6 @@ return (
   </div>
 
 </section>
-
 
 );
 }
