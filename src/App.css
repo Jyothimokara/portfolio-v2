@@ -334,7 +334,9 @@ padding:0 30px;
 /* ═══════════════════════════════════════════════════════════
    PROJECTS SECTION
 ════════════════════════════════════════════════════════════ */
- .latest-circle{
+ /* ================= LATEST PROJECTS CIRCLE ================= */
+
+.latest-circle{
 width:min(70vw,600px);
 height:min(70vw,600px);
 
@@ -350,149 +352,207 @@ text-align:center;
 padding:40px;
 }
 
-/* TEXT */
+/* TEXT CONTAINER */
+
 .latest-circle h2{
+display:flex;
+flex-direction:column;
+align-items:center;
+
 font-weight:700;
 line-height:1.4;
 letter-spacing:2px;
+
 font-size:clamp(32px,6vw,72px);
 }
 
-/* OUTLINE TEXT */
+/* LATEST OUTLINE */
+
 .latest-circle h2 span:first-child{
 display:block;
 color:transparent;
 -webkit-text-stroke:2px #fff;
 }
 
-/* SOLID TEXT */
+/* PROJECTS SOLID */
+
 .latest-circle h2 span:last-child{
 display:block;
 color:#fff;
 font-weight:800;
 }
 
-/* MOBILE FIX */
+/* ================= MOBILE FIX ================= */
+
 @media (max-width:768px){
 
 .latest-circle{
 width:80vw;
 height:80vw;
+padding:30px;
 }
 
 .latest-circle h2{
-font-size:clamp(24px,6vw,36px);
+font-size:clamp(26px,7vw,40px);
 line-height:1.5;
 }
 
 }
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+
+/* ================= PROJECTS GRID ================= */
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:80px;
 }
 
-.project-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(139, 92, 246, 0.2);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
+/* PROJECT CARD */
+
+.project-card{
+background:rgba(255,255,255,0.03);
+border:1px solid rgba(139,92,246,0.2);
+border-radius:8px;
+
+overflow:hidden;
+
+transition:all 0.3s ease;
+
+display:flex;
+flex-direction:column;
 }
 
-.project-card:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: #8b5cf6;
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
+.project-card:hover{
+background:rgba(255,255,255,0.06);
+border-color:#8b5cf6;
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(139,92,246,0.15);
 }
 
-.project-image {
-  width: 100%;
-  height: 200px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(59, 130, 246, 0.15));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #71717a;
-  font-size: 0.9rem;
+/* PROJECT IMAGE */
+
+.project-image{
+width:100%;
+height:200px;
+
+background:linear-gradient(
+135deg,
+rgba(139,92,246,0.15),
+rgba(59,130,246,0.15)
+);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:#71717a;
+font-size:0.9rem;
 }
 
-.project-content {
-  padding: 30px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+/* PROJECT CONTENT */
+
+.project-content{
+padding:30px;
+flex:1;
+
+display:flex;
+flex-direction:column;
 }
 
-.project-content h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #fafafa;
-  margin-bottom: 12px;
+/* TITLE */
+
+.project-content h3{
+font-size:1.2rem;
+font-weight:600;
+color:#fafafa;
+
+margin-bottom:12px;
 }
 
-.project-content p {
-  color: #a1a1aa;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  flex: 1;
+/* DESCRIPTION */
+
+.project-content p{
+color:#a1a1aa;
+font-size:0.95rem;
+
+line-height:1.6;
+
+margin-bottom:20px;
+
+flex:1;
 }
 
-.project-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 20px;
+/* TECH STACK */
+
+.project-tech{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+
+margin-bottom:20px;
 }
 
-.tech-badge {
-  background: rgba(139, 92, 246, 0.2);
-  color: #a78bfa;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
+/* TECH BADGE */
+
+.tech-badge{
+background:rgba(139,92,246,0.2);
+color:#a78bfa;
+
+padding:4px 12px;
+
+border-radius:20px;
+
+font-size:0.8rem;
+font-weight:500;
 }
 
-.project-links {
-  display: flex;
-  gap: 12px;
+/* LINKS */
+
+.project-links{
+display:flex;
+gap:12px;
 }
 
-.project-links a {
-  color: #8b5cf6;
-  text-decoration: none;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: color 0.3s ease;
+.project-links a{
+color:#8b5cf6;
+text-decoration:none;
+
+font-size:0.9rem;
+
+display:flex;
+align-items:center;
+gap:6px;
+
+transition:color 0.3s ease;
 }
 
-.project-links a:hover {
-  color: #a78bfa;
-} 
+.project-links a:hover{
+color:#a78bfa;
+}
+
+/* ================= RESPONSIVE PROJECT GRID ================= */
+
+@media (max-width:1024px){
+
+.projects-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
 @media (max-width:768px){
 
-.latest-circle{
-
-width:80vw;
-height:80vw;
-
+.projects-grid{
+grid-template-columns:1fr;
+gap:20px;
 }
 
-.latest-circle h2{
-
-font-size:clamp(24px,6vw,36px);
-
+.project-content{
+padding:24px;
 }
 
 }
-
 /* ═══════════════════════════════════════════════════════════
    CONTACT SECTION
 ════════════════════════════════════════════════════════════ */

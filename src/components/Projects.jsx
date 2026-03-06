@@ -55,9 +55,9 @@ return (
   <div className="projects-hero">
 <div className="latest-circle">
   <h2>
-    <span>LATEST</span>
-    <span>PROJECTS</span>
-  </h2>
+  <span>LATEST</span>
+  <span>PROJECTS</span>
+</h2>
 </div>
 
     <div ref={lensRef} className="code-lens"></div>
