@@ -54,10 +54,10 @@ return (
   {/* HERO */}
   <div className="projects-hero">
 <div className="latest-circle">
-  <div className="latest-title">
-    <span className="latest-outline">LATEST</span>
-    <span className="latest-solid">PROJECTS</span>
-  </div>
+  <h2>
+    <span>LATEST</span>
+    <span>PROJECTS</span>
+  </h2>
 </div>
 
     <div ref={lensRef} className="code-lens"></div>
