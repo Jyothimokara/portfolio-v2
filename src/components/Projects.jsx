@@ -53,11 +53,12 @@ return (
 
   {/* HERO */}
   <div className="projects-hero">
-
-    <h1 ref={titleRef} className="projects-title">
-      <span className="stroke">LATEST</span>
-      <span className="solid">PROJECTS</span>
-    </h1>
+<div className="latest-circle">
+  <div className="latest-title">
+    <span className="latest-outline">LATEST</span>
+    <span className="latest-solid">PROJECTS</span>
+  </div>
+</div>
 
     <div ref={lensRef} className="code-lens"></div>
 
