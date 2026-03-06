@@ -418,9 +418,18 @@ font-weight:800;
 
 @media (max-width:768px){
 
+.code-lens{
+display:none;
+}
+
 .projects-hero{
 min-height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
 }
+
+
 
 .latest-circle{
 width:80vw;

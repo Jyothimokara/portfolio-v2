@@ -14,26 +14,29 @@ export default function Projects() {
 
   useEffect(() => {
 
-    const lens = lensRef.current;
+const lens = lensRef.current;
 
-    gsap.fromTo(
-      lens,
-      {
-        clipPath: "circle(0px at center)"
-      },
-      {
-        clipPath: "circle(1200px at center)",
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".projects-hero",
-          start: "top top",
-          end: "+=800",
-          scrub: true,
-        }
-      }
-    );
+// mobile check
+if (window.innerWidth < 768) return;
 
-  }, []);
+gsap.fromTo(
+  lens,
+  {
+    clipPath: "circle(0px at center)"
+  },
+  {
+    clipPath: "circle(1200px at center)",
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".projects-hero",
+      start: "top top",
+      end: "+=800",
+      scrub: true,
+    }
+  }
+);
+
+}, []);
 
   return (
 
